@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Каталог українських книг</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Каталог українських книг</h1>
+    <p class="subtitle">Обери українську книгу за жанром, автором або рейтингом — читай краще!</p>
+  </header>
+  <main>
+    <section id="filters">
+        <select id="genreFilter"><option value="">Всі жанри</option></select>
+        <select id="authorFilter"><option value="">Всі автори</option></select>
+        <select id="ratingFilter">
+            <option value="">Всі рейтинги</option>
+            <option value="4.5">Від 4.5 ★</option>
+            <option value="4.0">Від 4.0 ★</option>
+            <option value="3.5">Від 3.5 ★</option>
+        </select>
+    </section>
+    <section id="bookList"></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
